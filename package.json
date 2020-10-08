@@ -1,0 +1,20 @@
+{
+  "name": "typescript_paths_module_resolution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "package:clean": "rm -rf node_modules/some_package",
+    "package:copy": "mkdir -p node_modules/some_package/node_modules/base && cp -r some_package/ node_modules/some_package/",
+    "build": "npm run package:clean && npm run package:copy && tsc",
+    "test": "npm run build && node run_with_tsconfig_paths.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

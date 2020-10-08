@@ -1,0 +1,5 @@
+{
+  "name": "some_package",
+  "main": "index.js",
+  "types": "index.d.ts"
+}
